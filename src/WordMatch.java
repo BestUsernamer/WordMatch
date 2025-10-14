@@ -7,7 +7,7 @@ public class WordMatch {
      * letters.
      */
     public WordMatch(String word) {
-        /* implementation not shown */
+       this.secret = word;
     }
 
 
@@ -39,5 +39,7 @@ public class WordMatch {
            return guess1;
        }
         if(guess1.compareTo(guess2)> 0 ) return guess1;
+        return guess2;
     }
+
 }
